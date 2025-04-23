@@ -80,7 +80,7 @@ export async function getFeedbackByInterviewId(
   const querySnapshot = await db
     .collection("feedback")
     .where("interviewId", "==", interviewId)
-    .where("userId", "==", userId)
+    .where("userId", "==",userId)
     .limit(1)
     .get();
 
